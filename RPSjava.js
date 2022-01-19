@@ -1,19 +1,20 @@
 function computerPlay() {
-    const choices = ('Rock', 'Paper', 'Scissors')
-    
-    if("Rock".equalsIgnoreCase(choices)) {
-        number = 1;
+    const playInt = Math.floor(Math.random() * 3)
+    let result;
+    if (playInt == 0){
+        result ='Rock';
+    } else if (playInt == 1){
+        result ='Paper';
+    } else {
+        result ='Scissors'
     }
-    else if("Paper".equalsIgnoreCase(choices)) {
-        number = 2;
-    }
-    else if("Scissors".equalsIgnoreCase(choices)) {
-        number = 0;
-    }
-    else {
-        number = -1;
+    return result  
     }
 
-    Math.floor(Math.random() * choices)
+function playerSelection() {
+    var playerInput = window.prompt("Rock/Paper/Scissors")
+    
+    
 }
+
 console.log(computerPlay())
